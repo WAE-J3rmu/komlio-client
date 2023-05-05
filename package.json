@@ -1,6 +1,6 @@
 {
 	"name": "khc",
-	"productName": "Komlio Client",
+	"productName": "Komlio",
 	"version": "1.0.1",
 	"description": "Make friends, play games, make rooms and stand out! - PaksaKomlio",
 	"main": "src/main.js",
@@ -28,7 +28,7 @@
 					"config": {
 						"name": "khc-windows",
 						"authors": "J3rmu",
-						"title": "Make friends, play games, make rooms and stand out! - PaksaKomlio",
+						"title": "Komlio Client",
 						"iconUrl": "https://hotelli.komlio.xyz/assets/images/icon.ico"
 					}
 				},
