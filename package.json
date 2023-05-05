@@ -1,8 +1,8 @@
 {
-	"name": "khc",
+	"name": "cpc",
 	"productName": "",
 	"version": "1.1.3",
-	"description": "Club Penguin Client - Made with electron and includes flash player",
+	"description": "Make friends, play games, make rooms and stand out! - PaksaKomlio",
 	"main": "src/main.js",
 	"scripts": {
 		"start": "electron-forge start",
@@ -26,7 +26,7 @@
 				{
 					"name": "@electron-forge/maker-squirrel",
 					"config": {
-						"name": "khc-windows",
+						"name": "cpc-komlio",
 						"authors": "J3rmu",
 						"title": "Make friends, play games, make rooms and stand out! - PaksaKomlio",
 						"iconUrl": "https://hotelli.komlio.xyz/assets/images/icon.ico"
@@ -42,21 +42,21 @@
 					"name": "@electron-forge/maker-dmg",
 					"config": {
 						"format": "ULFO",
-						"name": "khc-macOS"
+						"name": "cpc-macOS"
 					}
 				},
 				{
 					"name": "@electron-forge/maker-deb",
 					"config": {
-						"name": "khc-linuxDebian",
+						"name": "cpc-linuxDebian",
 						"version": "1.0.0"
 					}
 				},
 				{
 					"name": "@electron-forge/maker-flatpak",
 					"config": {
-						"genericName": "khc-linuxSandbox",
-						"productName": "khc-linuxSandbox",
+						"genericName": "cpc-linuxSandbox",
+						"productName": "cpc-linuxSandbox",
 						"categories": [
 							"Game"
 						],
@@ -89,7 +89,7 @@
 				]
 			}
 		],
-		"appId": "com.sacp.khc-app",
+		"appId": "com.sacp.cpc-app",
 		"productName": "KomlioClient",
 		"copyright": "Copyright © 2022 ${author}",
 		"win": {
