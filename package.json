@@ -26,7 +26,7 @@
 				{
 					"name": "@electron-forge/maker-squirrel",
 					"config": {
-						"name": "cpc-komlio",
+						"name": "cpc-windows",
 						"authors": "J3rmu",
 						"title": "Make friends, play games, make rooms and stand out! - PaksaKomlio",
 						"iconUrl": "https://hotelli.komlio.xyz/assets/images/icon.ico"
