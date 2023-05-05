@@ -1,7 +1,7 @@
 {
 	"name": "khc",
 	"productName": "Komlio",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Make friends, play games, make rooms and stand out! - PaksaKomlio",
 	"main": "src/main.js",
 	"scripts": {

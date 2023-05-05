@@ -2,7 +2,7 @@
 	"mainURL": "https://hotelli.komlio.xyz",
 	"repositoryName": "WAE-J3rmu/komlio-client",
 	"discordRpc": {
-		"enable": false,
+		"enable": true,
 		"discordAppId": "622340035949101056",
 		"activityTitle": "Komlio Hotelli",
 		"activityDescription": "Hotelli komlio🏨!",
