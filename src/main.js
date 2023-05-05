@@ -43,7 +43,7 @@ const createWindow = () => {
 			plugins: true
 		}
 	})
-
+	mainWindow.setMenu(null) //remove alt menu
 	mainWindow.loadURL(mainURL)
 	mainWindow.maximize()
 
