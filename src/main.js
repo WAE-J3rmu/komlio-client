@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, Menu } = require('electron')
 const discordRpc = require('discord-rpc')
 const path = require('path')
 const config = require('../config.json')
@@ -37,15 +37,18 @@ const createWindow = () => {
 	const mainWindow = new BrowserWindow({
 		width: config.windowSettings.width,
 		height: config.windowSettings.height,
-		autoHideMenuBar: true,
+		//autoHideMenuBar: true,
 		useContentSize: true,
 		webPreferences: {
 			plugins: true
 		}
 	})
-	mainWindow.setMenu(null) //remove alt menu
+
+	
 	mainWindow.loadURL(mainURL)
 	mainWindow.maximize()
+	let menu = Menu.buildFromTemplate(menuTemplate);
+    Menu.setApplicationMenu(menu);
 
 	if (rpc) {
 		rpc.on('ready', () => {
@@ -59,6 +62,31 @@ const createWindow = () => {
 		})
 	}
 }
+
+let menuTemplate = [
+    {
+        label: "Exit?",
+        submenu: [
+			
+            { role: 'quit' }
+        ]
+    },
+    {
+      label : "View",
+            submenu : [
+				{ role: 'reload' },
+				{ role: 'forceReload' },
+				{ type: 'separator' },
+				{ role: 'resetZoom' },
+				{ role: 'zoomIn' },
+				{ role: 'zoomOut' },
+				{ type: 'separator' },
+				{ role: 'togglefullscreen' },
+				{ type: 'separator' },
+				{ role: 'about' },
+        ]
+    }
+];
 
 app.on('ready', createWindow)
 
