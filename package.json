@@ -1,7 +1,7 @@
 {
 	"name": "khc",
 	"productName": "Komlio",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "Make friends, play games, make rooms and stand out! - PaksaKomlio",
 	"main": "src/main.js",
 	"scripts": {
@@ -91,9 +91,9 @@
 		],
 		"appId": "com.sacp.khc-app",
 		"productName": "KomlioClient",
-		"copyright": "Copyright © 2022 ${author}",
+		"copyright": "Copyright © 2023 ${author}",
 		"win": {
-			"icon": "./lib/icons/icon.png"
+			"icon": "./lib/icons/icon.ico"
 		},
 		"directories": {
 			"buildResources": "lib"

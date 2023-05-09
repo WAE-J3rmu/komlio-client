@@ -32,6 +32,12 @@ const pluginName = pluginPaths[process.platform]
 app.commandLine.appendSwitch('ppapi-flash-path', pluginName)
 app.commandLine.appendSwitch('ppapi-flash-version', '31.0.0.122')
 app.commandLine.appendSwitch('ignore-certificate-errors')
+app.setAboutPanelOptions({
+	// Tää on ihan vitun purkka paskaa :D
+	applicationName: 'Komlio Client\n\nWebsite:\nhotelli.komlio.xyz\n\nCredits:\n- J3-rmu\n\nVersion:',
+	copyright: '\n© 2023 Hotelli Komlio',
+	iconPath: path.join(__dirname, '../lib/icons/icon.png')
+})
 
 const createWindow = () => {
 	const mainWindow = new BrowserWindow({
